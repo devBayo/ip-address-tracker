@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.6rem;
+  color: #444;
+  line-height: 1.6;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.header {
+  height: 37%;
+  width: 100%;
+  text-align: center;
+  background-image: url('./images/pattern-bg.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.heading {
+  color: #fff;
+  font-weight: 500;
+  margin: 2.3rem 0;
+}
+
+.form {
+  text-align: center;
+  max-width: 53rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.form__input {
+  background-color: #fff;
+  border: unset;
+  max-width: 90%;
+  padding: 1.7rem 2rem;
+  font-size: 1.5rem;
+  color: #444;
+}
+
+.form__input::placeholder {
+  color: #aaa;
+}
+
+.form__button {
+  border: unset;
+  background-color: #222;
+  color: #fff;
+  max-width: 9%;
+  height: 100%;
+  transition: background-color 0.2s;
+}
+
+.form__button:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+.submit-icon {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.form * {
+  width: 100%;
+}
+
+.form *:focus {
+  outline: unset;
+}
+
+.summary {
+  height: 13rem;
+  width: 75%;
+  background-color: #fff;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 2rem;
+
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+  display: flex;
+}
+
+.summary > * {
+  flex-basis: 100%;
+}
+
+#map {
+  height: 65%;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+/* IP Address Tracker
+
+Search for any IP address or domain
+
+IP Address
+Location
+Timezone
+  UTC 
+ISP  */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
