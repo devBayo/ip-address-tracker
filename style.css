@@ -24,7 +24,6 @@ body {
 .header {
   height: 37%;
   width: 100%;
-  text-align: center;
   background-image: url('./images/pattern-bg.png');
   display: flex;
   flex-direction: column;
@@ -95,7 +94,7 @@ body {
   background-color: #fff;
   border-radius: 1.5rem;
   overflow: hidden;
-  padding: 2rem;
+  padding: 2rem 0;
 
   position: absolute;
   bottom: 0;
@@ -105,6 +104,32 @@ body {
 
 .summary > * {
   flex-basis: 100%;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.summary > *:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  background-color: #ccc;
+  width: 1px;
+  height: 60%;
+}
+
+.summary__title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #969696;
+  margin-bottom: 0.4rem;
+}
+
+.summary__value {
+  font-size: 2.1rem;
 }
 
 #map {
@@ -112,16 +137,6 @@ body {
   width: 100%;
   background-color: #f4f4f4;
 }
-
-/* IP Address Tracker
-
-Search for any IP address or domain
-
-IP Address
-Location
-Timezone
-  UTC 
-ISP  */
 
 .attribution {
   font-size: 11px;
